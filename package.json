@@ -1,6 +1,6 @@
 {
   "name": "generator-symmetra",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "keywords": [
     "yeoman-generator"
@@ -27,7 +27,6 @@
     "yeoman-generator": "^1.1.1"
   },
   "files": [
-    "app",
-    "router"
+    "generators"
   ]
 }
