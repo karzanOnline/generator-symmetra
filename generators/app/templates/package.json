@@ -1,0 +1,42 @@
+{
+  "name": "tpl-react-ts",
+  "version": "1.0.0",
+  "description": "generator template: react-ts",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc -w -p tsconfig.json",
+    "serve": "nodemon ./dist/server.js",
+    "dev": "npm run tsc & npm run serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devlee/tpl-react-ts.git"
+  },
+  "author": "devlee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devlee/tpl-react-ts/issues"
+  },
+  "homepage": "https://github.com/devlee/tpl-react-ts#readme",
+  "dependencies": {
+    "bundle-loader": "^0.5.5",
+    "core-decorators": "^0.18.0",
+    "koa": "^2.2.0",
+    "koa-favicon": "^2.0.0",
+    "koa-router": "^7.1.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.4",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
+    "react-router-redux": "next",
+    "redux": "^3.6.0",
+    "redux-observable": "^0.14.1",
+    "reselect": "^3.0.1",
+    "rxjs": "^5.4.0"
+  }
+}

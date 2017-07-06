@@ -1,6 +1,6 @@
 {
   "name": "generator-symmetra",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
   "keywords": [
     "yeoman-generator"
@@ -14,7 +14,11 @@
     "url": "git+https://github.com/karzanOnline/generator-symmetra.git"
   },
   "author": "ziyu",
-  "license": "ISC",
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
   "bugs": {
     "url": "https://github.com/karzanOnline/generator-symmetra/issues"
   },
