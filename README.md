@@ -6,17 +6,13 @@
 
 mac获取权限请使用`sudo`
 
-##### 1、tnpm 安装命令：
-```
-npm install -g tnpm@2 --registry=http://registry.npm.alibaba-inc.com
-```
-##### 2、Yeoman、Grunt、Bower
+##### Yeoman、Grunt、Bower
 
-    tnpm install -g yo grunt-cli bower
+    npm install -g yo grunt-cli bower
 
 ##### 3、Generator-Symmetra
 
-    tnpm install -g @ali/generator-symmetra
+    npm install -g generator-symmetra
 
 ### 初始化一个项目
 
@@ -24,6 +20,8 @@ npm install -g tnpm@2 --registry=http://registry.npm.alibaba-inc.com
     yo symmetra
 
 根据提示完成初始化任务:
+
+![图片描述][1]
 
 后台项目架子初始化完成，目录结构如下：(这是暂时的架构要和@石濑对接，计划在7月中旬确定最后的目录结构)
 
@@ -76,4 +74,4 @@ yeoman
 bower
 Less
 
-  [1]: https://img.alicdn.com/tfs/TB1J4TuSXXXXXbwXXXXXXXXXXXX-1130-1202.png
+  [1]: https://img.alicdn.com/tfs/TB1mV_.SXXXXXb5XpXXXXXXXXXX-1140-1068.png
