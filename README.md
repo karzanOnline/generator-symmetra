@@ -18,14 +18,12 @@ npm install -g tnpm@2 --registry=http://registry.npm.alibaba-inc.com
 
     tnpm install -g @ali/generator-symmetra
 
-### 初始化一个商家后台
+### 初始化一个项目
 
 在gitlab中新建项目(比如`trvale-seller-test`)，并在本地checkout出目录，进入到`trvale-seller-test`目录中，执行
-    yo @ali/symmetra
+    yo symmetra
 
 根据提示完成初始化任务:
-
-![图片描述][1]
 
 后台项目架子初始化完成，目录结构如下：(这是暂时的架构要和@石濑对接，计划在7月中旬确定最后的目录结构)
 
