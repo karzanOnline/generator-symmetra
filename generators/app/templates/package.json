@@ -1,42 +1,52 @@
 {
-  "name": "tpl-react-ts",
-  "version": "1.0.0",
-  "description": "generator template: react-ts",
-  "main": "index.js",
-  "directories": {
-    "doc": "doc"
+  "private": true,
+  "entry": {
+    "index": "./src/index.js"
+  },
+  "dependencies": {
+    "antd": "^2.4.2",
+    "classnames": "^2.2.5",
+    "clipboard-js": "^0.3.3",
+    "dva": "^1.2.0",
+    "lodash": "^4.17.2",
+    "moment": "^2.17.0",
+    "qrcode.react": "^0.6.1",
+    "qs": "^6.3.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-dva-hmr": "^0.2.0",
+    "babel-plugin-import": "^1.0.1",
+    "babel-plugin-lodash": "^3.2.11",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-runtime": "^6.9.2",
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-import-resolver-webpack": "^0.8.0",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-babel": "^4.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.8.0",
+    "expect": "^1.20.2",
+    "grunt": "^1.0.1",
+    "grunt-exec": "^2.0.0",
+    "js-cookie": "^2.1.4",
+    "redbox-react": "^1.3.2",
+    "roadhog": "^0.6.0",
+    "typescript": "^2.4.1",
+    "webpack": "^1.15.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "tsc": "tsc -w -p tsconfig.json",
-    "serve": "nodemon ./dist/server.js",
-    "dev": "npm run tsc & npm run serve"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/devlee/tpl-react-ts.git"
-  },
-  "author": "devlee",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/devlee/tpl-react-ts/issues"
-  },
-  "homepage": "https://github.com/devlee/tpl-react-ts#readme",
-  "dependencies": {
-    "bundle-loader": "^0.5.5",
-    "core-decorators": "^0.18.0",
-    "koa": "^2.2.0",
-    "koa-favicon": "^2.0.0",
-    "koa-router": "^7.1.1",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "react-redux": "^5.0.4",
-    "react-router": "^4.1.1",
-    "react-router-dom": "^4.1.1",
-    "react-router-redux": "next",
-    "redux": "^3.6.0",
-    "redux-observable": "^0.14.1",
-    "reselect": "^3.0.1",
-    "rxjs": "^5.4.0"
+    "start": "HOST=dev.sell.daily.alitrip.net roadhog server",
+    "win": "set HOST=dev.sell.daily.alitrip.net&&roadhog server",
+    "build": "roadhog build",
+    "build:dll": "roadhog buildDll",
+    "build:analyze": "roadhog build --analyze",
+    "test": "mocha ./src/**/*-test.js"
   }
 }

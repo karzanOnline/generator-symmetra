@@ -1,0 +1,42 @@
+{
+  "entry": "src/index.js",
+  "disableCSSModules": false,
+  "less": false,
+  "publicPath": "/",
+  "autoprefixer": null,
+  "outputPath": "./build",
+
+  "proxy": {
+    "/api": {
+      "target": "http://sell.alitrip.com",
+      "changeOrigin": true,
+      "pathRewrite": { "^/api" : "" },
+      "router": {
+        "dev.sell.fliggy.com:8000": "http://sell.fliggy.com",
+        "dev.sell.alitrip.com:8000": "http://sell.alitrip.com",
+        "dev.sell.daily.fliggy.net:8000": "http://sell.daily.fliggy.net",
+        "dev.sell.daily.alitrip.net:8000": "http://sell.daily.alitrip.net"
+      }
+    }
+  },
+
+  "theme": {
+    "@primary-color": "#FFC900",
+    "@link-color": "#E90"
+  },
+
+  "extraBabelPlugins": [
+    "transform-runtime",
+    "transform-decorators-legacy",
+    "lodash",
+    ["import", { "libraryName": "antd", "libarayDirectory": "lib", "style": true }]
+  ],
+
+  "env": {
+    "development": {
+      "extraBabelPlugins": [
+        "dva-hmr"
+      ]
+    }
+  }
+}
